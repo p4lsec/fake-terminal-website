@@ -12,27 +12,27 @@ var configs = (function () {
         }
     };
     Singleton.defaultOptions = {
-        general_help: "Below there's a list of commands that you can use.\nYou can use autofill by pressing the TAB key, autocompleting if there's only 1 possibility, or showing you a list of possibilities.",
+        general_help: "Below is a list of commands that you can use.  You can use autofill by pressing tab.",
         ls_help: "List information about the files and folders (the current directory by default).",
-        cat_help: "Read FILE(s) content and print it to the standard output (screen).",
-        whoami_help: "Print the user name associated with the current effective user ID and more info.",
+        cat_help: "Display file content.",
+        whoami_help: "Display your username.",
         date_help: "Print the system date and time.",
         help_help: "Print this menu.",
-        clear_help: "Clear the terminal screen.",
+        clear_help: "Clear the terminal.",
         reboot_help: "Reboot the system.",
         cd_help: "Change the current working directory.",
-        mv_help: "Move (rename) files.",
+        mv_help: "Move files.",
         rm_help: "Remove files or directories.",
         rmdir_help: "Remove directory, this command will only work if the folders are empty.",
-        touch_help: "Change file timestamps. If the file doesn't exist, it's created an empty one.",
+        touch_help: "Create/change file timestamps.",
         sudo_help: "Execute a command as the superuser.",
-        welcome: "Welcome to FTW (Fake Terminal Website)! :)\nIn order for you to start customizing the texts, go to js/main.js and replace the texts located at the configs var.\nIn that same file, you can define all the fake files you want as well as their content. This files will appear on the sidenav.\nAlso, don't forget to change the colors on the css/main.css file as well as the website title on the index.html file.\nNow in order to get started, feel free to either execute the 'help' command or use the more user-friendly colored sidenav at your left.\nIn order to skip text rolling, double click/touch anywhere.",
+        welcome: "Welcome! My name is Jace Powell, and I'm a cybersecurity team lead\nI run an API on this site (leave it alone :P), but added this nifty pseudo-terminal to post articles, blogs, etc.  In order to get started, type 'help' command, or use the sidebar on the left",
         internet_explorer_warning: "NOTE: I see you're using internet explorer, this website won't work properly.",
         welcome_file_name: "welcome_message.txt",
         invalid_command_message: "<value>: command not found.",
-        reboot_message: "Preparing to reboot...\n\n3...\n\n2...\n\n1...\n\nRebooting...\n\n",
+        reboot_message: "Why would you do that?",
         permission_denied_message: "Unable to '<value>', permission denied.",
-        sudo_message: "Unable to sudo using a web client.",
+        sudo_message: "Nice try...",
         usage: "Usage",
         file: "file",
         file_not_found: "File '<value>' not found.",
@@ -67,11 +67,11 @@ var files = (function () {
         }
     };
     Singleton.defaultOptions = {
-        "about.txt": "This website was made using only pure JavaScript with no extra libraries.\nI made it dynamic so anyone can use it, just download it from GitHub and change the config text according to your needs.\nIf you manage to find any bugs or security issues feel free to email me: luisbraganca@protonmail.com",
-        "getting_started.txt": "First, go to js/main.js and replace all the text on both singleton vars.\n- configs: All the text used on the website.\n- files: All the fake files used on the website. These files are also used to be listed on the sidenav.\nAlso please notice if a file content is a raw URL, when clicked/concatenated it will be opened on a new tab.\nDon't forget also to:\n- Change the page title on the index.html file\n- Change the website color on the css/main.css\n- Change the images located at the img folder. The suggested sizes are 150x150 for the avatar and 32x32/16x16 for the favicon.",
-        "contact.txt": "mail@example.com",
-        "social_network_1.txt": "https://www.socialite.com/username/",
-        "social_network_2.txt": "https://example.com/profile/9382/"
+        "about.txt": "I am a Cyber Security Team Lead with six years of intelligence and physical security experience, and two years of full time cyber security experience.\nWith a background in Military/Law Enforcement and Oil & Gas, I offer a unique viewpoint on cyber security, particularly OT/ICS, Physical Security, and Risk Management. I am genuinely passionate about Cyber Security, and I enjoy creating and managing security products and programs. ",,
+        "contact.txt": "p4lsec@gmail.com",
+        "linkedin.txt": "https://www.linkedin.com/in/p4lsec/",
+        "twitter.txt": "https://twitter.com/p4lsec",
+        "root.txt": "almost had ya there"
     };
     return {
         getInstance: function (options) {
